@@ -1,0 +1,55 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="layouts/defaultTemplate">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>CST-323 Activity Application</title>
+	
+</head>
+
+<body>
+	<div layout:fragment="content">
+	<div style="display: inline-flex;">
+	<h1>Current Orders</h1>
+	</div >
+	
+		
+		<div style="width: 70%;">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">Order Number</th>
+					<th scope="col">Product Name</th>
+					<th scope="col">Price</th>
+					<th scope="col">Quantity</th>
+					<th scope="col">Actions</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="order : ${orders}">
+					<td>
+						<h5 th:text="${order.orderNo}">0000000001</h5>
+					</td>
+					<td>
+						<h5 th:text="${order.productName}">Product 1</h5>
+					</td>
+					<td>
+						<h5 th:text="${order.price}">1.00</h5>
+					</td>
+					<td>
+						<h5 th:text="${order.quantity}">1</h5>
+					</td>
+					<td>
+					<a th:href="@{/orders/delete/{id}(id=${order.id})}" style="color: red;">Delete</a >
+					<a th:href="@{/orders/showUpdateForm/{id}(id=${order.id})}" style="margin-left: 20px; color: dodgerblue">Update</a ></td>
+			
+				</tr>
+				</tr>
+			</tbody>
+		</table>
+		</div >
+	</div>
+
+</body>

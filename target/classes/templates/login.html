@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="layouts/defaultTemplate">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CST-323 Activity Application</title>
+</head>
+
+<body>
+<div layout:fragment="content" >
+	<div style="display: flex; width: 100%; height: 100%; align-items: center; justify-content: center;">
+		<div style="justify-content: center; align-items: center; text-align: center">
+		<h1 style="margin-top: 70px;">Login</h1 >
+			<form method="POST" th:action="@{/doLogin}" th:object="${loginModel}">
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" class="form-control" placeholder="johndoe" id="username" th:field="*{username}">
+					<h5 style="color: red;" th:if="${#fields.hasErrors('username')}" th:errors="*{username}">User Name Error</h5>
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" placeholder="password" id="password" th:field="*{password}">
+					<h5 style="color: red;" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</h5>
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+			</form >
+		</div>
+	</div>
+</div>
+
+</body>
