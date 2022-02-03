@@ -23,7 +23,7 @@ public class OrdersDataService implements DataAccessInterface<OrderModel> {
 	@Override
 	public List<OrderModel> findAll() {
 		// TODO Auto-generated method stub
-		String sql = "SELECT * FROM ORDERS";
+		String sql = "SELECT * FROM orders";
 		List<OrderModel> orders = new ArrayList<OrderModel>();
 		try {
 			SqlRowSet srs = jdbcTemplateObject.queryForRowSet(sql);
@@ -61,7 +61,7 @@ public class OrdersDataService implements DataAccessInterface<OrderModel> {
 	@Override
 	public boolean create(OrderModel order) {
 		System.out.println(order.getProductName());
-		String sql = "INSERT INTO ORDERS(ORDER_NO, PRODUCT_NAME, PRICE, QUANTITY) VALUES(?,?,?,?)";
+		String sql = "INSERT INTO orders (ORDER_NO, PRODUCT_NAME, PRICE, QUANTITY) VALUES(?,?,?,?)";
 		try {
 
 			int rows = jdbcTemplateObject.update(sql, order.getOrderNo(), order.getProductName(), order.getPrice(),
