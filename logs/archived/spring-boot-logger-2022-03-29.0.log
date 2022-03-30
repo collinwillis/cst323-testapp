@@ -1,0 +1,114 @@
+2022-03-29 07:37:59,739 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-03-29 07:37:59,741 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Cst323ActivityApplication using Java 17 on Yhandi with PID 29732 (C:\Users\Collin\Code\GCU\Year 4\CST323\cst323-activity\target\classes started by Collin in C:\Users\Collin\Code\GCU\Year 4\CST323\cst323-activity)
+2022-03-29 07:37:59,742 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-03-29 07:37:59,747 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-03-29 07:37:59,919 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-29 07:37:59,919 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-29 07:38:00,357 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-03-29 07:38:00,368 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2022-03-29 07:38:00,570 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'aopConfiguration' of type [com.gcu.util.AopConfiguration$$EnhancerBySpringCGLIB$$f06da0b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-29 07:38:00,581 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'tracer' of type [com.gcu.util.Tracer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-29 07:38:00,582 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'performanceMonitorAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-29 07:38:00,878 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-03-29 07:38:00,885 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-29 07:38:00,885 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-03-29 07:38:00,886 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-03-29 07:38:00,940 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-03-29 07:38:00,940 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1020 ms
+2022-03-29 07:38:00,975 WARN org.apache.juli.logging.DirectJDKLog [restartedMain] Cannot deserialize session attribute [org.springframework.web.context.request.ServletRequestAttributes.DESTRUCTION_CALLBACK.scopedTarget.ordersBusinessService] for session [A55BBBD25E08BBE01635CA927057BC49]
+2022-03-29 07:38:01,591 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-03-29 07:38:01,696 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-03-29 07:38:01,764 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-03-29 07:38:01,778 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-29 07:38:01,809 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-29 07:38:01,818 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Cst323ActivityApplication in 2.399 seconds (JVM running for 2.987)
+2022-03-29 07:38:13,880 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-29 07:38:13,880 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-03-29 07:38:13,881 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-03-29 07:38:13,902 TRACE com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method com.gcu.controller.OrderController.display execution started at:Tue Mar 29 07:38:13 MST 2022
+2022-03-29 07:38:13,913 TRACE com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution started at:Tue Mar 29 07:38:13 MST 2022
+2022-03-29 07:38:13,917 TRACE com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method com.gcu.data.OrdersDataService.findAll execution started at:Tue Mar 29 07:38:13 MST 2022
+2022-03-29 07:38:13,960 TRACE com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method com.gcu.data.OrdersDataService.findAll execution lasted:43 ms
+2022-03-29 07:38:13,961 TRACE com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method com.gcu.data.OrdersDataService.findAll execution ended at:Tue Mar 29 07:38:13 MST 2022
+2022-03-29 07:38:13,961 WARN com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method execution longer than 10 ms!
+2022-03-29 07:38:13,961 TRACE com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution lasted:48 ms
+2022-03-29 07:38:13,961 TRACE com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution ended at:Tue Mar 29 07:38:13 MST 2022
+2022-03-29 07:38:13,961 WARN com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method execution longer than 10 ms!
+2022-03-29 07:38:13,961 TRACE com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method com.gcu.controller.OrderController.display execution lasted:59 ms
+2022-03-29 07:38:13,961 TRACE com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method com.gcu.controller.OrderController.display execution ended at:Tue Mar 29 07:38:13 MST 2022
+2022-03-29 07:38:13,961 WARN com.gcu.util.Tracer [http-nio-8080-exec-1] GCU Method execution longer than 10 ms!
+2022-03-29 07:38:14,276 WARN nz.net.ultraq.thymeleaf.expressions.ExpressionProcessor [http-nio-8080-exec-1] Fragment expression "layouts/defaultTemplate" is being wrapped as a Thymeleaf 3 fragment expression (~{...}) for backwards compatibility purposes.  This wrapping will be dropped in the next major version of the expression processor, so please rewrite as a Thymeleaf 3 fragment expression to future-proof your code.  See https://github.com/thymeleaf/thymeleaf/issues/451 for more information.
+2022-03-29 07:38:16,428 TRACE com.gcu.util.Tracer [http-nio-8080-exec-2] GCU Method com.gcu.controller.LoginController.display execution started at:Tue Mar 29 07:38:16 MST 2022
+2022-03-29 07:38:16,430 TRACE com.gcu.util.Tracer [http-nio-8080-exec-2] GCU Method com.gcu.controller.LoginController.display execution lasted:2 ms
+2022-03-29 07:38:16,431 TRACE com.gcu.util.Tracer [http-nio-8080-exec-2] GCU Method com.gcu.controller.LoginController.display execution ended at:Tue Mar 29 07:38:16 MST 2022
+2022-03-29 07:38:35,880 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.controller.LoginController.doLogin execution started at:Tue Mar 29 07:38:35 MST 2022
+2022-03-29 07:38:35,881 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.business.OrdersBusinessService.test execution started at:Tue Mar 29 07:38:35 MST 2022
+2022-03-29 07:38:35,881 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.business.OrdersBusinessService.test execution lasted:0 ms
+2022-03-29 07:38:35,881 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.business.OrdersBusinessService.test execution ended at:Tue Mar 29 07:38:35 MST 2022
+2022-03-29 07:38:35,881 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution started at:Tue Mar 29 07:38:35 MST 2022
+2022-03-29 07:38:35,881 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.data.OrdersDataService.findAll execution started at:Tue Mar 29 07:38:35 MST 2022
+2022-03-29 07:38:35,882 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.data.OrdersDataService.findAll execution lasted:1 ms
+2022-03-29 07:38:35,883 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.data.OrdersDataService.findAll execution ended at:Tue Mar 29 07:38:35 MST 2022
+2022-03-29 07:38:35,883 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution lasted:2 ms
+2022-03-29 07:38:35,883 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution ended at:Tue Mar 29 07:38:35 MST 2022
+2022-03-29 07:38:35,883 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.controller.LoginController.doLogin execution lasted:3 ms
+2022-03-29 07:38:35,883 TRACE com.gcu.util.Tracer [http-nio-8080-exec-3] GCU Method com.gcu.controller.LoginController.doLogin execution ended at:Tue Mar 29 07:38:35 MST 2022
+2022-03-29 07:43:18,832 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.controller.OrderController.deleteOrder execution started at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,833 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.business.OrdersBusinessService.delete execution started at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,833 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.data.OrdersDataService.delete execution started at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,855 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.data.OrdersDataService.delete execution lasted:22 ms
+2022-03-29 07:43:18,856 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.data.OrdersDataService.delete execution ended at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,856 WARN com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method execution longer than 10 ms!
+2022-03-29 07:43:18,856 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.business.OrdersBusinessService.delete execution lasted:23 ms
+2022-03-29 07:43:18,856 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.business.OrdersBusinessService.delete execution ended at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,856 WARN com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method execution longer than 10 ms!
+2022-03-29 07:43:18,857 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution started at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,857 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.data.OrdersDataService.findAll execution started at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,858 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.data.OrdersDataService.findAll execution lasted:1 ms
+2022-03-29 07:43:18,858 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.data.OrdersDataService.findAll execution ended at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,859 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution lasted:2 ms
+2022-03-29 07:43:18,859 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution ended at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,859 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.controller.OrderController.deleteOrder execution lasted:27 ms
+2022-03-29 07:43:18,859 TRACE com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method com.gcu.controller.OrderController.deleteOrder execution ended at:Tue Mar 29 07:43:18 MST 2022
+2022-03-29 07:43:18,859 WARN com.gcu.util.Tracer [http-nio-8080-exec-6] GCU Method execution longer than 10 ms!
+2022-03-29 07:43:21,029 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.controller.OrderController.deleteOrder execution started at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 07:43:21,030 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.business.OrdersBusinessService.delete execution started at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 07:43:21,030 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.data.OrdersDataService.delete execution started at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 07:43:21,036 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.data.OrdersDataService.delete execution lasted:6 ms
+2022-03-29 07:43:21,036 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.data.OrdersDataService.delete execution ended at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 07:43:21,037 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.business.OrdersBusinessService.delete execution lasted:7 ms
+2022-03-29 07:43:21,037 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.business.OrdersBusinessService.delete execution ended at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 07:43:21,037 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution started at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 07:43:21,037 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.data.OrdersDataService.findAll execution started at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 07:43:21,038 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.data.OrdersDataService.findAll execution lasted:1 ms
+2022-03-29 07:43:21,038 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.data.OrdersDataService.findAll execution ended at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 07:43:21,038 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution lasted:1 ms
+2022-03-29 07:43:21,039 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.business.OrdersBusinessService.getOrders execution ended at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 07:43:21,039 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.controller.OrderController.deleteOrder execution lasted:10 ms
+2022-03-29 07:43:21,039 TRACE com.gcu.util.Tracer [http-nio-8080-exec-7] GCU Method com.gcu.controller.OrderController.deleteOrder execution ended at:Tue Mar 29 07:43:21 MST 2022
+2022-03-29 09:45:37,686 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2022-03-29 09:45:37,688 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2022-03-29 09:45:37,777 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Cst323ActivityApplication using Java 17 on Yhandi with PID 29732 (C:\Users\Collin\Code\GCU\Year 4\CST323\cst323-activity\target\classes started by Collin in C:\Users\Collin\Code\GCU\Year 4\CST323\cst323-activity)
+2022-03-29 09:45:37,777 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-03-29 09:45:37,777 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-03-29 09:45:37,932 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-03-29 09:45:37,937 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2022-03-29 09:45:37,980 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'aopConfiguration' of type [com.gcu.util.AopConfiguration$$EnhancerBySpringCGLIB$$f06da0b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-29 09:45:37,983 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'tracer' of type [com.gcu.util.Tracer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-29 09:45:37,983 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'performanceMonitorAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-29 09:45:38,044 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-03-29 09:45:38,045 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-29 09:45:38,045 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-03-29 09:45:38,045 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-03-29 09:45:38,059 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-03-29 09:45:38,059 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 274 ms
+2022-03-29 09:45:38,326 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-03-29 09:45:38,330 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-03-29 09:45:38,356 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-03-29 09:45:38,364 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-29 09:45:38,365 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-29 09:45:38,368 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Cst323ActivityApplication in 0.625 seconds (JVM running for 7659.538)
+2022-03-29 09:45:38,370 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-03-29 09:45:38,651 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(131)-127.0.0.1] Application shutdown requested.
+2022-03-29 09:45:38,670 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(131)-127.0.0.1] HikariPool-2 - Shutdown initiated...
+2022-03-29 09:45:38,672 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(131)-127.0.0.1] HikariPool-2 - Shutdown completed.
